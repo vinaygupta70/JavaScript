@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="images">
+        <li id="img1"> 
+            <img src="imagee/img1.jpg" width="100px">
+        </li>
+
+        <li id="img2" >
+            <img src="imagee/img2.jpg" width="100px">
+        </li>
+
+        <li id="img3">
+            <img src="imagee/img3.jpg" width="100px">
+        </li>
+        
+        <li id="img4">
+            <img src="imagee/img4.jpg" width="100px">
+        </li>
+        
+        <li id="img5">
+             <img src="imagee/img5.jpg" width="100px">
+        </li>
+
+        <li><a id="google"  src="https://www.google.com">Google</a></li>
+
+    <ul>
+
+
+</body>
+<script>
+    // document.getElementById("img2").addEventListener('click', function(){
+    //     alert("img2 clicked");
+    // })
+
+//----------------------------------------------------------------
+
+    // document.getElementById("images").addEventListener('click', function(e){
+    //     console.log("ul clicked");
+    // }, false)
+
+    // document.getElementById("img2").addEventListener('click', function(e){
+    //     console.log("img2 clicked");
+    //     e.stopPropagation()  //it is used to stop the propogation || or we can use the true in spite of false value
+        
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+        
+    //     e.preventDefault(); // it is used to prevent to open the link or send the data
+    //     console.log("google clicked")
+        
+    // }, false)
+
+//--------------------------------------------------
+//remove the element on click 
+   
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log(e.target.tagName);
+        
+    //     if(e.target.tagName==='IMG'){
+    //         let removeIt=e.target.parentNode
+    //         removeIt.remove();
+    //     }
+    // }, false)
+
+    document.getElementById('images').addEventListener('click', function(e){
+       console.log( e.clientX, e.clientY);
+
+    }, false)
+
+
+
+
+    
+</script>
+</html>
